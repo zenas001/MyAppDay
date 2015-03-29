@@ -11,7 +11,6 @@ import android.util.Log;
 public class GetLocalNumber {
     public String GetLocalNumber(Context context) {
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        Log.d("test","localcode:"+telephonyManager.getLine1Number());
         return telephonyManager.getLine1Number();
     }
 }
